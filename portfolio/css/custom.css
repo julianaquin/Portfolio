@@ -1,0 +1,210 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+header{
+    background-color: black;
+  }
+  
+  /* navbar
+---------------------------*/
+
+  .navBar{
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 24px;
+
+  }
+  
+  /*Floats each item to the left with padding of 14 & 16 px.
+  Removes the underline with text decoration = none.*/
+  .navBar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Tahoma;
+  }
+  
+  .navBar a:hover{
+    color: rgb(144, 255, 253);
+  }
+  /*Hides the menu Icon which will show when the nav needs to be responsive*/
+  .navBar .icon{
+    display: none;
+  }
+
+  .barrita{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .nav-link{
+    padding: 16px 17px;
+    transition: 0.7s ease;
+  }
+
+  .menuB{
+    display: none;
+    cursor: pointer;
+  }
+
+  .barraRespo{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  
+
+
+
+
+.cuerpo{
+    background-image: url('/img/fondo.jpg');
+    background-size: cover;
+    min-height: 500px;
+  }
+  
+  .imag{
+
+    position: relative;
+    padding-left: 0px;
+    margin-top: 25px;
+  }
+
+  .habilities{
+      margin-top: 70px;
+      margin-bottom: 70px;
+  }
+
+  .card {
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+}
+
+
+
+
+footer .container{
+    margin-top: 90px;
+    color: white;
+    background-color: black;
+}
+
+.tts ul{
+    margin-top: 60px;
+}
+
+.bottom-left{
+  visibility: hidden;
+  position: relative;
+  bottom: 0px;
+  height: 40px;
+  background-color: black;
+  color:white;
+}
+
+
+.imagLogo{
+  margin-top: 60px;
+  max-width: 100px;
+}
+
+.copyr{
+  margin-top: 80px;
+  color:white;
+  text-align: center;
+}
+
+/*Set your custom screen width here replacing 700*/
+@media (max-width: 700px){
+
+  .menuB{
+    display:block;
+  }
+
+  .menuB.active .barraRespo:nth-child(2){
+    opacity:0;
+  }
+
+  .menuB.active .barraRespo:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menuB.active .barraRespo:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  .barrita{
+    position: fixed;
+    left: -100%;
+    top:40px;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    margin-bottom: 20px;;
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .barrita.active{
+    left: 0;
+  }
+
+  .copyr{
+    margin-top: 50px;
+  }
+
+.tts{
+  height:300px;
+}
+
+}
+
+.ABanner{
+  padding-top:100px;
+  padding-bottom: 100px;
+  background-color: black;
+  color:white;
+  align-items: center;
+}
+
+.cuerpo2{
+  margin-top: 100px;
+}
+
+.projcs{
+  background-color: black;
+}
+
+
+.bme{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.contc{
+  color: black;
+}
