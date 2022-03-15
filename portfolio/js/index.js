@@ -18,9 +18,14 @@ const epa= document.getElementById('epa');
 const sicard= document.getElementById('sicard');
 const final= document.getElementById('final');
 
+const xicard= document.getElementById('xicard');
+const fi= document.getElementById('final2');
+
+const wicard= document.getElementById('wicard');
+const fin= document.getElementById('finalisimo');
 
 
-var num=0, n=0, u=0, x=0, y=0, z=0;
+var num=0, n=0, u=0, x=0, y=0, z=0, w=0, zi=0;
 const menuB= document.querySelector('.menuB');
 const barrita= document.querySelector('.barrita');
 
@@ -91,6 +96,27 @@ sicard.addEventListener('click', () =>{
      final.style.visibility = "hidden";
   }
 })
+    
+xicard.addEventListener('click', () =>{
+  zi++;
+  if(zi %2){
+      fi.style.visibility = "visible";
+      console.log(black);
+  }else{
+     fi.style.visibility = "hidden";
+  }
+})
+
+wicard.addEventListener('click', () =>{
+  w++;
+  if(w %2){
+      fin.style.visibility = "visible";
+      console.log(black);
+  }else{
+     fin.style.visibility = "hidden";
+  }
+})
+    
     
 
 
